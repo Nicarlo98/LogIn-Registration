@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data.success) {
                     showNotification('Registration successful! Please login.', 'success');
                     setTimeout(() => {
-                        window.location.href = 'login.html';
+                        window.location.href = '../Login/login.html';
                     }, 2000);
                 } else {
                     showNotification(data.message, 'error');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data.success) {
                     showNotification('Login successful! Redirecting...', 'success');
                     setTimeout(() => {
-                        window.location.href = 'welcome.php';
+                        window.location.href = '../welcome.php';
                     }, 2000);
                 } else {
                     showNotification(data.message, 'error');
