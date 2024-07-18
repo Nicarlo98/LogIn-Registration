@@ -1,21 +1,3 @@
-/* .gradient-custom {
-  /* fallback for old browsers */
-/* background: #6a11cb; */
-
-/* Chrome 10-25, Safari 5.1-6 */
-/* background: -webkit-linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  ); */
-
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* background: linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  ); */
-/* } */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -66,4 +48,28 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+.notification.success {
+  background-color: #28a745;
+}
+
+.notification.error {
+  background-color: #dc3545;
 }
